@@ -11,6 +11,8 @@ import MapIcon from "@mui/icons-material/Map";
 import BedtimeIcon from '@mui/icons-material/Bedtime';
 import SearchIcon from "@mui/icons-material/Search";
 import FreeRoomsLogo from '../assets/freeRoomsLogo.png';
+import FreeRoomLogoDoorClosed from '../assets/freeroomsDoorClosed.png'
+import { useState } from 'react';
 
 // Freeroom themed colours
 const white = '#FFF';
@@ -24,6 +26,19 @@ const theme = createTheme({
 });
 
 function Header() {
+    const [ clicked, setClicked ] = useState(false);
+    const [ link, setLink ] = useState(FreeRoomsLogo);
+
+    const getClick = () => {
+        if (!clicked) {
+            setLink(FreeRoomLogoDoorClosed);
+            setClicked(true);
+        } else {
+            setLink(FreeRoomsLogo);
+            setClicked(false);
+        }
+    }
+
     return (
         <ThemeProvider theme={theme}>
             <AppBar 
@@ -43,8 +58,10 @@ function Header() {
                         color="secondary"
                         aria-label="menu"
                         sx={{ borderRadius: 0 }}
+                        // Open or close door
+                        onClick={getClick}
                     >
-                        <img src={FreeRoomsLogo} alt="Logo" height={50} />
+                        <img src={link} alt="Logo" height={50} />
                         <Typography 
                             variant="h5" 
                             component="div" 
