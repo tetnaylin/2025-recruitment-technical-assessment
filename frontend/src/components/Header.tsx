@@ -8,7 +8,8 @@ import Stack from '@mui/material/Stack';
 
 import GridIcon from "@mui/icons-material/GridViewRounded";
 import MapIcon from "@mui/icons-material/Map";
-import BedtimeIcon from '@mui/icons-material/Bedtime';import SearchIcon from "@mui/icons-material/Search";
+import BedtimeIcon from '@mui/icons-material/Bedtime';
+import SearchIcon from "@mui/icons-material/Search";
 import FreeRoomsLogo from '../assets/freeRoomsLogo.png';
 
 // Freeroom themed colours
