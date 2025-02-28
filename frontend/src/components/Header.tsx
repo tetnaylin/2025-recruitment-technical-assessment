@@ -26,7 +26,7 @@ function Header() {
     return (
         <ThemeProvider theme={theme}>
             <AppBar 
-                position="fixed"
+                position="static"
                 // Get rid of box shadow
                 elevation={0}
                 sx={{
