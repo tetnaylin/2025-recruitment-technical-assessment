@@ -3,7 +3,6 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
 
@@ -36,58 +35,85 @@ function Header() {
                 }}
             >
                 <Toolbar>
-                <IconButton
-                    size="large"
-                    edge="start"
-                    color="secondary"
-                    aria-label="menu"
-                    sx={{ borderRadius: 0 }}
-                >
-                    <img src={FreeRoomsLogo} alt="Logo" height={50} />
-                    <Typography 
-                        variant="h5" 
-                        component="div" 
-                        color="secondary" 
-                        fontWeight={700}
-                        fontFamily={""}
-                        fontSize={"2rem"}
+
+                    <IconButton
+                        size="large"
+                        edge="start"
+                        color="secondary"
+                        aria-label="menu"
+                        sx={{ borderRadius: 0 }}
                     >
-                        Freerooms
-                    </Typography>
-                </IconButton>
-                
-                <Stack 
-                    spacing={"10%"} 
-                    direction={"row"} 
-                    sx={{ 
-                        marginLeft: "auto", 
-                        marginRight: "3em",
-                    }}
-                >
-                    <IconButton sx={{ borderRadius: 1, border: '1px solid', borderColor: theme.palette.secondary.main }}>
-                        <SearchIcon sx={{ color: theme.palette.secondary.main}}/>
+                        <img src={FreeRoomsLogo} alt="Logo" height={50} />
+                        <Typography 
+                            variant="h5" 
+                            component="div" 
+                            color="secondary" 
+                            fontWeight={700}
+                            fontFamily={""}
+                            fontSize={"2rem"}
+                        >
+                            Freerooms
+                        </Typography>
                     </IconButton>
-                    <IconButton 
+                    
+                    <Stack 
+                        spacing={"10%"} 
+                        direction={"row"} 
                         sx={{ 
-                            borderRadius: 1, 
-                            border: '1px solid', 
-                            borderColor: theme.palette.secondary.main, 
-                            backgroundColor: theme.palette.secondary.main, 
-                            '&:hover': {
-                                backgroundColor: theme.palette.secondary.main
-                            }
+                            marginLeft: "auto", 
+                            marginRight: "3em",
                         }}
-                    >
-                        <GridIcon sx={{ color: theme.palette.primary.main}}/>
-                    </IconButton>
-                    <IconButton sx={{ borderRadius: 1, border: '1px solid', borderColor: theme.palette.secondary.main }}>
-                        <MapIcon sx={{ color: theme.palette.secondary.main}}/>                        
-                    </IconButton>
-                    <IconButton sx={{ borderRadius: 1, border: '1px solid', borderColor: theme.palette.secondary.main }}>
-                        <BedtimeIcon sx={{ color: theme.palette.secondary.main}}/>
-                    </IconButton>
-                </Stack>
-                
+                    >   
+                        {/* Search Icon */}
+                        <IconButton 
+                            sx={{ 
+                                borderRadius: 1, 
+                                border: '1px solid', 
+                                borderColor: theme.palette.secondary.main 
+                            }}
+                        >
+                            <SearchIcon sx={{ color: theme.palette.secondary.main}}/>
+                        </IconButton>
+                        
+                        {/* GridIcon */}
+                        <IconButton 
+                            sx={{ 
+                                borderRadius: 1, 
+                                border: '1px solid', 
+                                borderColor: theme.palette.secondary.main, 
+                                backgroundColor: theme.palette.secondary.main, 
+                                '&:hover': {
+                                    backgroundColor: theme.palette.secondary.main
+                                }
+                            }}
+                        >
+                            <GridIcon sx={{ color: theme.palette.primary.main}}/>
+                        </IconButton>
+                        
+                        {/* MapIcon */}
+                        <IconButton 
+                            sx={{ 
+                                borderRadius: 1, 
+                                border: '1px solid', 
+                                borderColor: theme.palette.secondary.main 
+                            }}
+                        >
+                            <MapIcon sx={{ color: theme.palette.secondary.main}}/>                        
+                        </IconButton>
+                        
+                        {/* MoonIcon */}
+                        <IconButton 
+                            sx={{ 
+                                borderRadius: 1, 
+                                border: '1px solid', 
+                                borderColor: theme.palette.secondary.main 
+                            }}
+                        >
+                            <BedtimeIcon sx={{ color: theme.palette.secondary.main}}/>
+                        </IconButton>
+
+                    </Stack>
+
                 </Toolbar>
             </AppBar>
         </ThemeProvider>
