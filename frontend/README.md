@@ -129,3 +129,17 @@ Whilst most of our frontend applicants tend to have frontend experience, either 
     }
   ]
 ```
+
+
+# Setup!!!
+
+Please run
+```
+# installing npm
+npm install
+
+# running frontend
+npm run dev
+```
+
+then copy and paste the link provided by vite (e.g., http://localhost:5173/) to open in browser 
