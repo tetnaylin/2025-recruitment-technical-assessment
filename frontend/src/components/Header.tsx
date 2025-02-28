@@ -5,11 +5,11 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
+import Stack from '@mui/material/Stack';
+
 import GridIcon from "@mui/icons-material/GridViewRounded";
 import MapIcon from "@mui/icons-material/Map";
-import MeetingRoomIcon from "@mui/icons-material/MeetingRoom";
-import SearchIcon from "@mui/icons-material/Search";
-
+import BedtimeIcon from '@mui/icons-material/Bedtime';import SearchIcon from "@mui/icons-material/Search";
 import FreeRoomsLogo from '../assets/freeRoomsLogo.png';
 
 // Freeroom themed colours
@@ -41,7 +41,7 @@ function Header() {
                     edge="start"
                     color="secondary"
                     aria-label="menu"
-                    sx={{borderRadius: 0}}
+                    sx={{ borderRadius: 0 }}
                 >
                     <img src={FreeRoomsLogo} alt="Logo" height={50} />
                     <Typography 
@@ -56,7 +56,37 @@ function Header() {
                     </Typography>
                 </IconButton>
                 
-                <Button color={"secondary"} sx={{ marginLeft: "auto" }}>Login</Button>
+                <Stack 
+                    spacing={"10%"} 
+                    direction={"row"} 
+                    sx={{ 
+                        marginLeft: "auto", 
+                        marginRight: "3em",
+                    }}
+                >
+                    <IconButton sx={{ borderRadius: 1, border: '1px solid', borderColor: theme.palette.secondary.main }}>
+                        <SearchIcon sx={{ color: theme.palette.secondary.main}}/>
+                    </IconButton>
+                    <IconButton 
+                        sx={{ 
+                            borderRadius: 1, 
+                            border: '1px solid', 
+                            borderColor: theme.palette.secondary.main, 
+                            backgroundColor: theme.palette.secondary.main, 
+                            '&:hover': {
+                                backgroundColor: theme.palette.secondary.main
+                            }
+                        }}
+                    >
+                        <GridIcon sx={{ color: theme.palette.primary.main}}/>
+                    </IconButton>
+                    <IconButton sx={{ borderRadius: 1, border: '1px solid', borderColor: theme.palette.secondary.main }}>
+                        <MapIcon sx={{ color: theme.palette.secondary.main}}/>                        
+                    </IconButton>
+                    <IconButton sx={{ borderRadius: 1, border: '1px solid', borderColor: theme.palette.secondary.main }}>
+                        <BedtimeIcon sx={{ color: theme.palette.secondary.main}}/>
+                    </IconButton>
+                </Stack>
                 
                 </Toolbar>
             </AppBar>
