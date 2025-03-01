@@ -40,14 +40,25 @@ function ActionAreaCard() {
   return (
     <ThemeProvider theme={theme}>
         <Card sx={{ maxWidth: 340 }} elevation={0}>
-            <CardActionArea sx={{ minHeight: '345px', width: 315, borderRadius: 3, overflow: 'hidden' }} >
+            <CardActionArea 
+                sx={{ 
+                    minHeight: '345px', 
+                    width: 315, 
+                    borderRadius: 3, 
+                    overflow: 'hidden' 
+                }} >
                 <CardCover>
-                    <img 
-                        src={Agsm}
-                        alt="Agsm"
-                    />
+                    <img  src={Agsm} alt="Agsm"/>
                 </CardCover>
-                <Fab variant="extended" size="small" sx={{ backgroundColor: theme.palette.primary.main, borderRadius: 3, fontWeight: 700, textTransform: 'lowercase' }} >
+                <Fab 
+                    variant="extended" 
+                    size="small" 
+                    sx={{ 
+                        backgroundColor: theme.palette.primary.main, 
+                        borderRadius: 3, 
+                        fontWeight: 700, 
+                        textTransform: 'lowercase' 
+                    }} >
                     <CircleIcon sx={{ mr: 1, height: "10px", color: "#61af4f" }} />
                     9 rooms available
                 </Fab>
