@@ -51,7 +51,7 @@ function BusinessSchool() {
                         height: 35
                     }} >
                     <CircleIcon sx={{ mr: 1, height: "12px", color: "#61af4f" }} />
-                    9 rooms available
+                    18 rooms available
                 </Fab>
                 <Fab 
                     variant="extended" 
@@ -81,7 +81,7 @@ function BusinessSchool() {
                             textTransform: 'none',
                         }}
                     >
-                        AGSM
+                        Business School
                     </Typography>
                     <Box 
                         sx={{ 
@@ -97,7 +97,7 @@ function BusinessSchool() {
                                 textTransform: 'none',
                             }}
                         >
-                            0
+                            3.3
                         </Typography>
                         <StarIcon sx={{ paddingRight: 3, color: "#f3a916" }}/>  
                     </Box>

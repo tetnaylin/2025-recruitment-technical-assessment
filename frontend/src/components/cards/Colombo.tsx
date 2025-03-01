@@ -51,7 +51,7 @@ function Colombo() {
                         height: 35
                     }} >
                     <CircleIcon sx={{ mr: 1, height: "12px", color: "#61af4f" }} />
-                    9 rooms available
+                    5 rooms available
                 </Fab>
                 <Fab 
                     variant="extended" 
@@ -81,7 +81,7 @@ function Colombo() {
                             textTransform: 'none',
                         }}
                     >
-                        AGSM
+                        Colombo Building
                     </Typography>
                     <Box 
                         sx={{ 

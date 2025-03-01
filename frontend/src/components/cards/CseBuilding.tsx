@@ -51,7 +51,7 @@ function CseBuilding() {
                         height: 35
                     }} >
                     <CircleIcon sx={{ mr: 1, height: "12px", color: "#61af4f" }} />
-                    9 rooms available
+                    7 rooms available
                 </Fab>
                 <Fab 
                     variant="extended" 
@@ -81,7 +81,7 @@ function CseBuilding() {
                             textTransform: 'none',
                         }}
                     >
-                        AGSM
+                        Computer Science & Eng (K17)
                     </Typography>
                     <Box 
                         sx={{ 

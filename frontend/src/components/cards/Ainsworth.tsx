@@ -51,7 +51,7 @@ function Ainsworth() {
                         height: 35
                     }} >
                     <CircleIcon sx={{ mr: 1, height: "12px", color: "#61af4f" }} />
-                    9 rooms available
+                    16 rooms available
                 </Fab>
                 <Fab 
                     variant="extended" 
@@ -97,7 +97,7 @@ function Ainsworth() {
                                 textTransform: 'none',
                             }}
                         >
-                            0
+                            4.4
                         </Typography>
                         <StarIcon sx={{ paddingRight: 3, color: "#f3a916" }}/>  
                     </Box>

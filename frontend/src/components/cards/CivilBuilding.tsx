@@ -51,7 +51,7 @@ function CivilBuilding() {
                         height: 35
                     }} >
                     <CircleIcon sx={{ mr: 1, height: "12px", color: "#61af4f" }} />
-                    9 rooms available
+                    8 rooms available
                 </Fab>
                 <Fab 
                     variant="extended" 
@@ -81,7 +81,7 @@ function CivilBuilding() {
                             textTransform: 'none',
                         }}
                     >
-                        AGSM
+                        Civil Engineering Building
                     </Typography>
                     <Box 
                         sx={{ 
