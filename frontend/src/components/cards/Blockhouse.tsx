@@ -1,8 +1,6 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import Box from '@mui/material/Box';
@@ -11,20 +9,7 @@ import CircleIcon from '@mui/icons-material/Circle';
 import CardCover from '@mui/joy/CardCover';
 import StarIcon from '@mui/icons-material/Star';
 
-import FreeRoomsLogo from '../assets/freeRoomsLogo.png';
-import Agsm from '../assets/agsm.webp';
-import Ainsworth from '../assets/ainsworth.webp';
-import Anitab from '../assets/anitab.webp';
-import BiologicalScience from '../assets/biologicalScience.webp';
-import BiologicalScienceWest from '../assets/biologicalScienceWest.webp';
-import Blockhouse from '../assets/blockhouse.webp';
-import BusinessSchool from '../assets/businessSchool.webp';
-import CivilBuilding from '../assets/civilBuilding.webp';
-import Colombo from '../assets/colombo.webp';
-import CseBuilding from '../assets/cseBuilding.webp';
-
-import NavigationIcon from '@mui/icons-material/Navigation';
-import { Hidden } from '@mui/material';
+import BlockhouseImg from '../../assets/blockhouse.webp';
 
 // Freeroom themed colours
 const white = '#FFF';
@@ -37,7 +22,7 @@ const theme = createTheme({
     },
 });
 
-function ActionAreaCard() {
+function Blockhouse() {
   return (
     <ThemeProvider theme={theme}>
         <Card sx={{ maxWidth: 340, width: "100%" }} elevation={0}>
@@ -49,7 +34,7 @@ function ActionAreaCard() {
                     overflow: 'hidden' 
                 }} >
                 <CardCover>
-                    <img  src={Agsm} alt="Agsm"/>
+                    <img  src={BlockhouseImg} alt="Blockhouse"/>
                 </CardCover>
                 <Fab 
                     variant="extended" 
@@ -93,7 +78,7 @@ function ActionAreaCard() {
                             fontWeight: 700,
                             fontSize: 13, 
                             color: 'white',
-                            textTransform: 'unset',
+                            textTransform: 'none',
                         }}
                     >
                         AGSM
@@ -109,7 +94,7 @@ function ActionAreaCard() {
                                 fontWeight: 700,
                                 fontSize: 13, 
                                 color: 'white',
-                                textTransform: 'unset',
+                                textTransform: 'none',
                             }}
                         >
                             0
@@ -123,4 +108,4 @@ function ActionAreaCard() {
   );
 }
 
-export default ActionAreaCard;
+export default Blockhouse;

@@ -9,7 +9,7 @@ import CircleIcon from '@mui/icons-material/Circle';
 import CardCover from '@mui/joy/CardCover';
 import StarIcon from '@mui/icons-material/Star';
 
-import AgsmImg from '../assets/agsm.webp';
+import BiologicalScienceWestImg from '../../assets/biologicalScienceWest.webp';
 
 // Freeroom themed colours
 const white = '#FFF';
@@ -22,7 +22,7 @@ const theme = createTheme({
     },
 });
 
-function AGSM() {
+function BiologicalScienceWest() {
   return (
     <ThemeProvider theme={theme}>
         <Card sx={{ maxWidth: 340, width: "100%" }} elevation={0}>
@@ -34,7 +34,7 @@ function AGSM() {
                     overflow: 'hidden' 
                 }} >
                 <CardCover>
-                    <img  src={AgsmImg} alt="Agsm"/>
+                    <img  src={BiologicalScienceWestImg} alt="BiologicalScienceWest"/>
                 </CardCover>
                 <Fab 
                     variant="extended" 
@@ -108,4 +108,4 @@ function AGSM() {
   );
 }
 
-export default AGSM;
+export default BiologicalScienceWest;
