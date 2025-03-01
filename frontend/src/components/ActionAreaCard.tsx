@@ -9,6 +9,7 @@ import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import CircleIcon from '@mui/icons-material/Circle';
 import CardCover from '@mui/joy/CardCover';
+import StarIcon from '@mui/icons-material/Star';
 
 import FreeRoomsLogo from '../assets/freeRoomsLogo.png';
 import Agsm from '../assets/agsm.webp';
@@ -39,7 +40,7 @@ const theme = createTheme({
 function ActionAreaCard() {
   return (
     <ThemeProvider theme={theme}>
-        <Card sx={{ maxWidth: 340 }} elevation={0}>
+        <Card sx={{ maxWidth: 340, width: "100%" }} elevation={0}>
             <CardActionArea 
                 sx={{ 
                     minHeight: '345px', 
@@ -56,11 +57,65 @@ function ActionAreaCard() {
                     sx={{ 
                         backgroundColor: theme.palette.primary.main, 
                         borderRadius: 3, 
-                        fontWeight: 700, 
-                        textTransform: 'lowercase' 
+                        fontWeight: 700,
+                        fontSize: 12, 
+                        textTransform: 'lowercase',
+                        position: 'absolute',
+                        top: 15,
+                        right: 15, 
+                        height: 35
                     }} >
-                    <CircleIcon sx={{ mr: 1, height: "10px", color: "#61af4f" }} />
+                    <CircleIcon sx={{ mr: 1, height: "12px", color: "#61af4f" }} />
                     9 rooms available
+                </Fab>
+                <Fab 
+                    variant="extended" 
+                    size="small" 
+                    sx={{ 
+                        backgroundColor: theme.palette.secondary.main, 
+                        borderRadius: 2, 
+                        position: 'absolute',
+                        bottom: 15,
+                        height: 45,
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        width: "95%",
+                        paddingLeft: 3,
+                        '&:hover': {
+                            backgroundColor: theme.palette.secondary.main
+                        },
+                        // Center the floating action bar
+                        left: "50%",
+                        transform: "translateX(-50%)",
+                    }} >
+                    <Typography 
+                        sx={{
+                            fontWeight: 700,
+                            fontSize: 13, 
+                            color: 'white',
+                            textTransform: 'unset',
+                        }}
+                    >
+                        AGSM
+                    </Typography>
+                    <Box 
+                        sx={{ 
+                            display: "flex",
+                            alignItems: "center",
+                        }}
+                    >
+                        <Typography 
+                            sx={{
+                                fontWeight: 700,
+                                fontSize: 13, 
+                                color: 'white',
+                                textTransform: 'unset',
+                            }}
+                        >
+                            0
+                        </Typography>
+                        <StarIcon sx={{ paddingRight: 3, color: "#f3a916" }}/>  
+                    </Box>
                 </Fab>
             </CardActionArea>
         </Card>
